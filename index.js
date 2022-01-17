@@ -2,6 +2,10 @@ const express = require('express');
 const path = require('path');
 require('dotenv').config();
 
+// DB config
+const { dbConn } = require('./database/config')
+dbConn();
+
 // Express App
 const app = express();
 
