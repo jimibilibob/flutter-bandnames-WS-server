@@ -12,4 +12,4 @@ const dbConn = async() => {
 
 module.exports = {
   dbConn
-}
+};

@@ -9,6 +9,12 @@ dbConn();
 // Express App
 const app = express();
 
+// Read and body parser
+app.use(express.json());
+
+// My routes
+app.use('/api/login', require('./routes/auth'));
+
 // Node Server
 const server = require("http").createServer(app);
 module.exports.io = require("socket.io")(server);
